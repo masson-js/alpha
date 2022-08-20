@@ -17,25 +17,14 @@ body {
   background-size: cover;
 }
 
-li, a, button {
-  font-family: "Nanum+Gothic", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
-}
-
-
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 30px 10%;
-}
-
-.Logo {
-  cursor: pointer;
+  height: 60px;
+  background-color: rgba(222, 203, 171, 0.2);
 }
 
 .Nav__links {
@@ -48,8 +37,16 @@ nav {
   
 }
 
+li, a, button {
+  font-family: "Nanum+Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(222, 203, 171, 1);
+  text-decoration: none;
+}
+
 .Nav__links li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease 0s;
   border: none;
   padding: 9px 25px;
   border-radius: 50px;
@@ -57,9 +54,15 @@ nav {
 }
 
 .Nav__links li a:hover {
-  color: black;
+  color: white;
+  background-color: rgba(222, 203, 171, 1);
 }
 
+.FoodGallery {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
 
 
 
