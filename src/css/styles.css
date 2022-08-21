@@ -37,7 +37,7 @@ nav {
   
 }
 
-li, a, button {
+li, a {
   font-family: "Nanum+Gothic", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -64,5 +64,8 @@ li, a, button {
   background-color: black;
 }
 
-
-
+.StillLife {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
