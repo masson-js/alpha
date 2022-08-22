@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -27,14 +26,13 @@ nav {
   background-color: rgba(222, 203, 171, 0.2);
 }
 
-.Nav__links {
+.Nav-links {
   list-style:none;
 }
 
-.Nav__links li {
+.Nav-links li {
   display: inline-block;
   padding: 0 20px;
-  
 }
 
 li, a {
@@ -45,46 +43,105 @@ li, a {
   text-decoration: none;
 }
 
-.Nav__links li a {
+.Nav-links li a {
   transition: all 0.4s ease 0s;
   border: none;
   padding: 9px 25px;
   border-radius: 50px;
-  
 }
 
-.Nav__links li a:hover {
+.Nav-links li a:hover {
   cursor: pointer;
   color: white;
   background-color: rgba(222, 203, 171, 1);
 }
 
-.FoodGallery {
-  width: 100px;
-  height: 100px;
-  background-color: black;
+.Contant-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%x;
+  height: 619px;
 }
 
+.FoodGallery {
+display: grid;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 1200px;
+height: 560px;
+margin: 0;
+padding: 0;
+border-radius: 50px;
+background-color: rgba(222, 203, 171, 1);
+}
+
+.InsideFoodGallery {
+
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+
+
+  /* column-gap: 10px;
+  row-gap: 15px;
+  width: 1100px;
+  height: 560px;
+  margin: 0;
+  padding: 0;
+  background-color:white; */
+}
+.InsideFoodGallery > img {
+  width:100%;
+  height: 100%;
+}
+
+
 .StillLife {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 619px;
   background-color: red;
 }
 
 .LifeStyles {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 619px;
   background-color: blue;
 }
 
 .About {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 619px;
   background-color: green;
 }
 
 .Contact {
-  width: 100px;
-  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 619px;
   background-color: pink;
 }

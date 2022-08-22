@@ -14,7 +14,7 @@ function Navbar(props) {
   return (
     <header className="Header">
       <nav>
-        <ul className="Nav__links">
+        <ul className="Nav-links">
         <li><a href='/'>Vira Simon-Nikulina</a></li>
           <li id="food" ><a onClick={() => {showFood()}}>Food</a></li>
           <li id="stillLife"><a onClick={() => {showStill()}}>Still Life</a></li>

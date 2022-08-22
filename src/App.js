@@ -48,11 +48,13 @@ const App = () => {
               showLife={showLife}
               showAbout={showAbout}
               showContact={showContact}/>
-        {showFoodSection &&  <Food />}
-        {showStillSection && <StillLife />}
-        {showLifeStyles && <LifeStyles />}
-        {showAboutState && <About />}
-        {showContactState && <Contact />}
+        <div className="Contant-section">
+          {showFoodSection &&  <Food />}
+          {showStillSection && <StillLife />}
+          {showLifeStyles && <LifeStyles />}
+          {showAboutState && <About />}
+          {showContactState && <Contact />}
+        </div>
     </div>
   );
 }
