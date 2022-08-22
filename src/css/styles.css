@@ -54,6 +54,7 @@ li, a {
 }
 
 .Nav__links li a:hover {
+  cursor: pointer;
   color: white;
   background-color: rgba(222, 203, 171, 1);
 }
@@ -68,4 +69,22 @@ li, a {
   width: 100px;
   height: 100px;
   background-color: red;
+}
+
+.LifeStyles {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.About {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.Contact {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
 }

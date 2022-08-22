@@ -9,22 +9,50 @@ import StillLife from './StillLife';
 import LifeStyles from './LifeStyles'
 
 const App = () => {
-  const [showFoodSection, setShowFoodSection] = useState(false);
-  const [showStillSection, setStillSection] = useState(false)
+ 
+  const iniState = false
 
-  const showFood = () => setShowFoodSection((showOne) => !showOne)
-  const showStill = () => setStillSection((showStill) => !showStill)
+  const [showFoodSection, setShowFoodSection] = useState(false);
+  const [showStillSection, setStillSection] = useState(false);
+  const [showLifeStyles, setShowLifeStyles] = useState(false);
+  const [showAboutState, setAbout] = useState(false);
+  const [showContactState, setShowContact] = useState(false);
+
+
+
+
+  const showFood = () => 
+    setShowFoodSection((showFood) => 
+    !showFood, setStillSection(iniState), setShowLifeStyles(iniState), setAbout(iniState), setShowContact(iniState));
   
+    const showStill = () => 
+    setStillSection((showStill) => 
+    !showStill, setShowFoodSection(iniState), setShowLifeStyles(iniState), setAbout(iniState), setShowContact(iniState));
+  
+  const showLife = () => 
+    setShowLifeStyles((showLife) => 
+    !showLife, setShowFoodSection(iniState), setStillSection(iniState), setAbout(iniState), setShowContact(iniState))
+
+  const showAbout = () => 
+    setAbout((showAbout)=> 
+    !showAbout, setShowFoodSection(iniState), setStillSection(iniState), setShowLifeStyles(iniState), setShowContact(iniState))
+
+  const showContact = () => 
+    setShowContact((showContact) => 
+    !showContact,setShowFoodSection(iniState), setStillSection(iniState), setShowLifeStyles(iniState), setAbout(iniState) )
  
   return (
     <div className="App">
       <Navbar showFood={showFood}
-              showStill={showStill} />
-        {showFoodSection ? <Food /> : null}
-        {showStillSection ? <StillLife /> : null}
-        <LifeStyles />
-        <About />
-        <Contact />
+              showStill={showStill}
+              showLife={showLife}
+              showAbout={showAbout}
+              showContact={showContact}/>
+        {showFoodSection &&  <Food />}
+        {showStillSection && <StillLife />}
+        {showLifeStyles && <LifeStyles />}
+        {showAboutState && <About />}
+        {showContactState && <Contact />}
     </div>
   );
 }
